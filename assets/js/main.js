@@ -113,6 +113,42 @@ let swiper = new Swiper('.portfolio__container',{
     keyboard: true,
 })
 
+let clientSwiper = new Swiper('.clientSwiper',{
+    freeMode: true,
+    lazy: true,
+    loop:true,
+    watchSlidesProgress: true,
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+    //autoplay
+    autoplay: {
+        delay: 500,
+      },
+     // Responsive breakpoints
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 40
+    }
+  }
+})
+
+
 // ===categories portfolio===
 
 let list = document.querySelectorAll('.list')
@@ -227,3 +263,11 @@ btn.addEventListener('click',function(e){
     e.preventDefault();
     
 })
+// ======= Messanger chat ============
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));

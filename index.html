@@ -15,6 +15,7 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
+    
     <!-- :::Favicon icon::: -->
     <title>Nasir | Digital Marketing Freelancer and Marketing Consultant</title>
 </head>
@@ -400,7 +401,37 @@
                 
             </div>
         </section>
-
+        <!-- ======Feature Clients and Partner===== -->
+        <section class="clients section">
+            <h2 class="section__title">Feature Clients and Pertner</h2>
+            <span class="section__subtitle">Client tailored execution.</span>
+        <div class="swiper-container container">
+            <!-- Additional required wrapper -->
+            <div class="swiper clientSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/ace.png" alt="ace" class="slide-1"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/arija.png" alt="arija" class="slide-2"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/battellion.jpg" alt="battellion" class="slide-3"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/centrepoint.png" alt="centrepoint" class="slide-4"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/Deliv.png" alt="deliv" class="slide-5"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/lacardo.png" alt="lacardo" class="slide-6"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/digint.png" alt="digint" class="slide-7"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/haturi.png" alt="haturi" class="slide-8"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/horiLOGO.png" alt="horiLOGO" class="slide-9"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/max.jpg" alt="max" class="slide-10"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/noon.jpg" alt="noon" class="slide-11"></div>
+                    <div class="swiper-slide"><img src="./assets/img/imagesClients/nownow.png" alt="nownow" class="slide-12"></div>
+                </div>
+            </div>
+            
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        </section>
         <!--==================== CONTACT ME ====================-->
         <section class="contact section" id="contact">
             <h2 class="section__title">Contact Me</h2>
@@ -494,6 +525,9 @@
          </div>
         </footer>
     </main>
+    <div id="fb-root"></div>
+
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     
         <!--==================== SCROLL TOP ====================-->
@@ -522,5 +556,13 @@
     );
             }
         </script>
+        <!-- ===messanger chat box js code==== -->
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "PAGE-ID");
+            chatbox.setAttribute("attribution", "biz_inbox");
+          </script>
+        <!-- =================== messanger chat box===== -->
+    <script src="https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js"></script>
 </body>
 </html>
