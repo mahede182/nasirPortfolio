@@ -1,2 +1,2 @@
 # nasirPortfolio
-[nasirClientWorkLink - https://https://nacir.netlify.app/](https://https://nacir.netlify.app/)
+[nasirClientWorkLink - https://nacir.netlify.app/](https://nacir.netlify.app/)
